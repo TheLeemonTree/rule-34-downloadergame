@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cy0et37h6g7f2"]
+
+[ext_resource type="Script" uid="uid://c7g6u37oue057" path="res://BooruDownloader/MainMenu.cs" id="1_jtdrv"]
+[ext_resource type="PackedScene" uid="uid://cuqucusp27out" path="res://BooruDownloader/MainPage.tscn" id="2_vro0e"]
+[ext_resource type="PackedScene" uid="uid://bt5hp1gd4ijp4" path="res://BooruDownloader/Settings.tscn" id="3_a6ljx"]
+
+[node name="MainMenu" type="Control" unique_id=1675492212 node_paths=PackedStringArray("_mainPage", "_settingsPage", "_mainPageButton", "_settingsPageButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jtdrv")
+_mainPage = NodePath("MainPage")
+_settingsPage = NodePath("Settings")
+_mainPageButton = NodePath("MainButton")
+_settingsPageButton = NodePath("SettingsButton")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=37785885]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6666667, 0.8980392, 0.6431373, 1)
+
+[node name="MainPage" parent="." unique_id=1689814086 instance=ExtResource("2_vro0e")]
+layout_mode = 1
+
+[node name="Settings" parent="." unique_id=553652100 instance=ExtResource("3_a6ljx")]
+visible = false
+layout_mode = 1
+
+[node name="MainButton" type="Button" parent="." unique_id=6389199]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 44.0
+text = "Main"
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1919092853]
+layout_mode = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 44.0
+text = "Settings
+"
+
+[connection signal="button_down" from="MainButton" to="." method="OnMainButtonButtonDown"]
+[connection signal="button_down" from="SettingsButton" to="." method="OnSettingsButtonButtonDown"]

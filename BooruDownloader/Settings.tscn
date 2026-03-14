@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bt5hp1gd4ijp4"]
+
+[ext_resource type="Script" uid="uid://c1yuyeaiale6s" path="res://BooruDownloader/Settings.cs" id="1_khyc3"]
+
+[node name="Settings" type="Control" unique_id=553652100 node_paths=PackedStringArray("_apiKeyTextEdit", "_blackListTextEdit", "_savePathTextEdit")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_khyc3")
+_apiKeyTextEdit = NodePath("ApiText")
+_blackListTextEdit = NodePath("BlackList")
+_savePathTextEdit = NodePath("SavePath")
+
+[node name="ApiText" type="TextEdit" parent="." unique_id=788637336]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 576.0
+offset_bottom = 128.0
+text = "api key"
+placeholder_text = "api key"
+
+[node name="BlackList" type="TextEdit" parent="." unique_id=1689529099]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 576.0
+offset_bottom = 256.0
+text = "blacklist"
+placeholder_text = "blacklist"
+
+[node name="SavePath" type="TextEdit" parent="." unique_id=1050656160]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 320.0
+offset_right = 576.0
+offset_bottom = 384.0
+text = "SavePath"
+placeholder_text = "SavePath"
+
+[node name="SaveButton" type="Button" parent="." unique_id=1576504964]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 512.0
+offset_right = 704.0
+offset_bottom = 575.0
+text = "Save settings"
+
+[connection signal="text_changed" from="ApiText" to="." method="OnApiTextTextChanged"]
+[connection signal="text_changed" from="BlackList" to="." method="OnBlackListTextChanged"]
+[connection signal="text_changed" from="SavePath" to="." method="OnSavePathTextChanged"]
+[connection signal="button_down" from="SaveButton" to="." method="OnSaveButtonButtonDown"]

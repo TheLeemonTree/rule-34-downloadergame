@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cwx5r7iqv336c"]
+
+[ext_resource type="Script" uid="uid://b2phw084oymof" path="res://Commons/CommonData.cs" id="1_7eo6r"]
+
+[node name="CommonData" type="Node" unique_id=1936085369]
+script = ExtResource("1_7eo6r")

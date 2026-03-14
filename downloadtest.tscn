@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dsu5sbjwux70s"]
+
+[ext_resource type="Script" uid="uid://caixouoq0w58h" path="res://Downloadtest.cs" id="1_gi7ji"]
+
+[node name="downloadtest" type="Control" unique_id=788124626]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gi7ji")
+
+[node name="GetBody" type="HTTPRequest" parent="." unique_id=456490386]
+use_threads = true
+
+[node name="GetData" type="HTTPRequest" parent="." unique_id=376044488]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1032301077]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="request_completed" from="GetBody" to="." method="OnGetBodyRequestCompleted"]
+[connection signal="request_completed" from="GetData" to="." method="OnGetDataRequestCompleted"]
