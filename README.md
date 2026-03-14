@@ -41,4 +41,6 @@ The goal of this project is to make a very good booru downloader
 
 There is not .exe at the moment, but you can download the repo and run it locally on your system, you will need godot .net version installed, latest version, also c# and .net needs to bei nstalled as well.
 
+## donation
 
+[bitcoin: bc1qvtpf07l3sd5stxxx7egc68sd3mhssgy7g0sqyk](bitcoinadress.png)
