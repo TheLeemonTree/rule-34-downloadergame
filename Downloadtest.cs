@@ -17,7 +17,7 @@ public partial class Downloadtest : Control
         portrait = GetNode<TextureRect>("TextureRect");
 
         // Perform the HTTP request. The URL below returns a PNG image as of writing.
-        Error error = httpBody.Request("https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&json=1&api_key=0aa7abb3faac99abd8382f74e0be62493118e69079adc74c1b0f49b7bd28ef0da35000193dc66b904ad323c7944c6529944e327504e95fd47938b2907a25d270&user_id=439074&id=16686439");
+        Error error = httpBody.Request("");
         if (error != Error.Ok)
         {
             GD.PushError("An error occurred in the HTTP request.");
