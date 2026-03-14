@@ -43,4 +43,5 @@ There is not .exe at the moment, but you can download the repo and run it locall
 
 ## donation
 
-[bitcoin: bc1qvtpf07l3sd5stxxx7egc68sd3mhssgy7g0sqyk](bitcoinadress.png)
+### Bitcoin
+![bc1qvtpf07l3sd5stxxx7egc68sd3mhssgy7g0sqyk](bitcoinadress.png)
