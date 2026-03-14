@@ -20,21 +20,21 @@ NOTE THE BLACKLIST SYSTEM DOES NOT WORK, I MEAN TECHNIQLY IT DOES, BUT IT DOES N
 
 The goal of this project is to make a very good booru downloader
 
-- [] Check duplicates on disk to skip download
+- [ ] Check duplicates on disk to skip download
 
-- [] Make blacklist to be saved on disk
+- [ ] Make blacklist to be saved on disk
 
-- [] Other booru websites
+- [ ] Other booru websites
 
-- [] Possible e621 as well
+- [ ] Possible e621 as well
 
-- [] Download only one type of post (mp4, gif, jpeg, so on)
+- [ ] Download only one type of post (mp4, gif, jpeg, so on)
 
-- [] Conveyour system, so you can prompt to download in sequence
+- [ ] Conveyour system, so you can prompt to download in sequence
 
-- [] Pause download
+- [ ] Pause download
 
-- [] Cancel download
+- [ ] Cancel download
 
 
 ## How to run
