@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bqy0pyqnssw5r"]
+
+[ext_resource type="Script" uid="uid://bo37oytw8w11u" path="res://BooruDownloader/ServerPage.cs" id="1_14x0u"]
+[ext_resource type="PackedScene" uid="uid://dbqmsrln0cskf" path="res://BooruDownloader/UI/SettingsText.tscn" id="2_j0bgs"]
+
+[node name="ServerPage" type="Control" unique_id=489918636 node_paths=PackedStringArray("Options", "_apiText")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_14x0u")
+Options = NodePath("OptionButton")
+_apiText = NodePath("TextEdit")
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=770900312]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 64.0
+offset_right = 960.0
+offset_bottom = 128.0
+selected = 0
+item_count = 2
+popup/item_0/text = "Rule34"
+popup/item_0/id = 0
+popup/item_1/text = "Gelbooru"
+popup/item_1/id = 1
+
+[node name="TextEdit" parent="." unique_id=1892129869 instance=ExtResource("2_j0bgs")]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 512.0
+offset_bottom = 256.0
+placeholder_text = "Put your api key here"
+_placeholderText = "Put your api key here"
+_tittle = "Api key"
+
+[node name="SaveButton" type="Button" parent="." unique_id=1885490940]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 512.0
+offset_right = 896.0
+offset_bottom = 576.0
+text = "Save"
+
+[connection signal="item_focused" from="OptionButton" to="." method="OnOptionButtonItemFocused"]
+[connection signal="button_down" from="SaveButton" to="." method="OnSaveButtonButtonDown"]

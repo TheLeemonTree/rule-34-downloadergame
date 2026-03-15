@@ -30,17 +30,16 @@ namespace R34.BooruDownloader
 
         public string PostURL;
         public string TagURL;
-        public const string BasePostURL = "https://api.rule34.xxx//index.php?page=dapi&s=post&q=index&json=1";
-        public const string BaseTagURL = "https://api.rule34.xxx//index.php?page=dapi&s=tag&q=index&json=1";
 
         private PostBody _currentPost;
         private void SetPostURL()
         {
-            PostURL = $"{BasePostURL}&tags={_tags}&limit=42&pid={_pageNum}{SaveSystem.Instance.saveData.ApiKey}";
+            PostURL = $"{Shareware.Instance.currentServerURL}&tags={_tags}&limit=42&pid={_pageNum}{Shareware.Instance.currentApiKey}";
+            GD.Print(PostURL);
         }
         private void SetTagURL()
         {
-            TagURL = $"{BaseTagURL}&name={_mainTag}{SaveSystem.Instance.saveData.ApiKey}";
+            TagURL = $"{Shareware.Instance.currentServerTagURL}&name={_mainTag}{Shareware.Instance.currentApiKey}";
         }
         private string GetMainTag()
         {
@@ -162,9 +161,14 @@ namespace R34.BooruDownloader
                     GD.PushError("Couldn't load the image.");
                 }
             }
-            else if(_currentPost.file_url.EndsWith(".gif") || _currentPost.file_url.EndsWith(".mp4"))
+            else if( (_currentPost.file_url.EndsWith(".gif") || _currentPost.file_url.EndsWith(".mp4")))
             {
-                GD.PushWarning("Video format detected, skipping preview.");
+                if (Shareware.Instance.ignoreVideos)
+                {
+                    GD.PushWarning("Video format detected, skipping download.");
+                    return;
+                }
+                GD.Print("Video format detected, skipping preview.");
             }
             else
             {

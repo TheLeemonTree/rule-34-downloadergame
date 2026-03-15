@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SaveSystem="*uid://c5ue2swckglyn"
 CommonData="*uid://cwx5r7iqv336c"
+Shareware="*uid://cv77ow7qlfs12"
 
 [dotnet]
 

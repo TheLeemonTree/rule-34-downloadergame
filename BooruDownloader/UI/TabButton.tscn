@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c5bwa8ikj4uwk"]
+
+[ext_resource type="Script" uid="uid://b5hqelre6bm71" path="res://BooruDownloader/UI/TabButton.cs" id="1_o0idt"]
+
+[node name="TabButton" type="Button" unique_id=2041123602]
+offset_right = 128.0
+offset_bottom = 40.0
+text = "dfd"
+script = ExtResource("1_o0idt")
+
+[connection signal="button_down" from="." to="." method="OnButtonDown"]

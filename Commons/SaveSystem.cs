@@ -2,6 +2,7 @@ using Godot;
 using System;
 using System.Text.Json;
 using System.Collections.Generic;
+using Rule34downloadergame.Commons;
 
 namespace Commons
 {
@@ -33,9 +34,9 @@ namespace Commons
 
 
         }
-        public void SetApi(string api)
+        public void SetApi(IApikeys api)
         {
-            saveData.ApiKey = api;
+            saveData.ApiKeys.Add(api);
         }
         public void SetPath(string path)
         {

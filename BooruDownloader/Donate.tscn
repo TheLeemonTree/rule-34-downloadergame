@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d22xrwyh02kw0"]
+
+[ext_resource type="Texture2D" uid="uid://c2vp6buaf23ci" path="res://bitcoinadress.png" id="1_30h2g"]
+[ext_resource type="Script" uid="uid://b4u743yli5rix" path="res://BooruDownloader/Donate.cs" id="1_p8c74"]
+[ext_resource type="Texture2D" uid="uid://c60a8lmi84eir" path="res://github-svgrepo-com.svg" id="2_gutru"]
+
+[node name="Donate" type="Control" unique_id=1347024774]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p8c74")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1280211470]
+layout_mode = 0
+offset_left = 704.0
+offset_top = 208.0
+offset_right = 1088.0
+offset_bottom = 576.0
+texture = ExtResource("1_30h2g")
+
+[node name="Label" type="Label" parent="." unique_id=1355296212]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 128.0
+offset_right = 1127.0
+offset_bottom = 192.0
+text = "Bitcoin adress: bc1qvtpf07l3sd5stxxx7egc68sd3mhssgy7g0sqyk"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="." unique_id=42798807]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 200.0
+offset_right = 392.0
+offset_bottom = 249.0
+text = "Source Code
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1204009244]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 384.0
+offset_bottom = 504.0
+texture_normal = ExtResource("2_gutru")
+stretch_mode = 0
+
+[connection signal="button_down" from="TextureButton" to="." method="OnTextureButtonButtonDown"]

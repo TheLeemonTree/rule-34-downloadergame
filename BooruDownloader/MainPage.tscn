@@ -36,9 +36,9 @@ wrap_mode = 1
 
 [node name="Button" type="Button" parent="." unique_id=1067878530]
 layout_mode = 0
-offset_left = 832.0
+offset_left = 768.0
 offset_top = 512.0
-offset_right = 960.0
+offset_right = 896.0
 offset_bottom = 575.0
 text = "Download
 "
