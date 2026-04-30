@@ -44,10 +44,10 @@ vertical_alignment = 1
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=1204009244]
 layout_mode = 0
-offset_left = 128.0
+offset_left = 192.0
 offset_top = 256.0
-offset_right = 384.0
-offset_bottom = 504.0
+offset_right = 320.0
+offset_bottom = 384.0
 texture_normal = ExtResource("2_gutru")
 stretch_mode = 0
 

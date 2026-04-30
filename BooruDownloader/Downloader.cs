@@ -34,7 +34,7 @@ namespace R34.BooruDownloader
         private PostBody _currentPost;
         private void SetPostURL()
         {
-            PostURL = $"{Shareware.Instance.currentServerURL}&tags={_tags}&limit=42&pid={_pageNum}{Shareware.Instance.currentApiKey}";
+            PostURL = $"{Shareware.Instance.currentServerURL}&tags={_tags}&limit=1&pid={_pageNum}{Shareware.Instance.currentApiKey}";
             GD.Print(PostURL);
         }
         private void SetTagURL()
@@ -72,7 +72,7 @@ namespace R34.BooruDownloader
                 GetBodyRequest();
                 await ToSignal(_bodyRequest, "request_completed");
                 GD.Print("Body request done");
-                await StartDownload(_postsArr);
+                //await StartDownload(_postsArr);
                 _pageNum++;
                 await ToSignal(GetTree().CreateTimer(.25f), "timeout");
             }
@@ -120,7 +120,8 @@ namespace R34.BooruDownloader
             var json = new Json();
             json.Parse(body.GetStringFromUtf8());
             _postsArr = json.GetData().AsGodotArray();
-            //GD.Print(responseArr);
+            GD.Print(_postsArr);
+            GD.Print(headers);
             //PostBody postBody = new PostBody(responseArr[0].AsGodotDictionary());
             //await StartDownload(responseArr);
 

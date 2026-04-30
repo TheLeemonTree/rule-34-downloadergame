@@ -6,6 +6,7 @@ using Rule34downloadergame.Commons;
 using Rule34downloadergame.Commons.Servers;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace R34.BooruDownloader
 {
@@ -52,7 +53,9 @@ namespace R34.BooruDownloader
         public void OnSaveButtonButtonDown()
         {
             IApikeys apikey;
-            SaveSystem.Instance.SetPath(_savePathText.Text);
+            //possible chance this, as it might not work on other systems.
+            string _savePathFixed = _savePathText.Text.EndsWith("\\") ? _savePathText.Text : _savePathText.Text + "\\";
+            SaveSystem.Instance.SetPath(_savePathFixed);
             SaveSystem.Instance.saveData.IgnoreVideos = IgnoreVideo.ButtonPressed;
             SaveSystem.Instance.saveData.CheckDuplicates = CheckDuplicates.ButtonPressed;
             SaveSystem.Instance.saveData.SelectedOptionsIndex = _serverOptions.Selected;
