@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="Rule34downloadergame"
-run/main_scene="uid://cy0et37h6g7f2"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [autoload]
 

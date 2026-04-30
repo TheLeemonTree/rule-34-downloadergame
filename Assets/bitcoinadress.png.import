@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c60a8lmi84eir"
-path="res://.godot/imported/github-svgrepo-com.svg-c9e57f1242b39259549a89bcf5702d42.ctex"
+uid="uid://c2vp6buaf23ci"
+path="res://.godot/imported/bitcoinadress.png-d58c12a5951890c9fa629bcec0c0e324.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://github-svgrepo-com.svg"
-dest_files=["res://.godot/imported/github-svgrepo-com.svg-c9e57f1242b39259549a89bcf5702d42.ctex"]
+source_file="res://Assets/bitcoinadress.png"
+dest_files=["res://.godot/imported/bitcoinadress.png-d58c12a5951890c9fa629bcec0c0e324.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

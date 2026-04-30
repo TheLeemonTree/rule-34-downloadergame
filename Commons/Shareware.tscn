@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cv77ow7qlfs12"]
-
-[ext_resource type="Script" uid="uid://dlj0qn0ku8jsi" path="res://Commons/Shareware.cs" id="1_4xyfv"]
-
-[node name="Shareware" type="Node" unique_id=131414446]
-script = ExtResource("1_4xyfv")

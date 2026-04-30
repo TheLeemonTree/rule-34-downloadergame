@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://c5ue2swckglyn"]
-
-[ext_resource type="Script" uid="uid://jagh2kwsetge" path="res://Commons/SaveSystem.cs" id="1_yvw6e"]
-
-[node name="SaveSystem" type="Node" unique_id=1745006883]
-script = ExtResource("1_yvw6e")

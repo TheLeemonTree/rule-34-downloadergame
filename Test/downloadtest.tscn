@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsu5sbjwux70s"]
 
-[ext_resource type="Script" uid="uid://caixouoq0w58h" path="res://Downloadtest.cs" id="1_gi7ji"]
+[ext_resource type="Script" uid="uid://caixouoq0w58h" path="res://Test/Downloadtest.cs" id="1_gi7ji"]
 
 [node name="downloadtest" type="Control" unique_id=788124626]
 layout_mode = 3
