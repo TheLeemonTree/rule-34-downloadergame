@@ -16,9 +16,7 @@ config/icon="res://Assets/icon.svg"
 
 [autoload]
 
-SaveSystem="*uid://c5ue2swckglyn"
-CommonData="*uid://cwx5r7iqv336c"
-Shareware="*uid://cv77ow7qlfs12"
+Settings="*uid://bsasnhki86qtq"
 
 [dotnet]
 

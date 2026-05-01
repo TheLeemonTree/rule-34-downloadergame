@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://m3bhp2yde6j6"]
+
+[ext_resource type="Texture2D" uid="uid://wkli4jbfe55c" path="res://Assets/rule34icon.png" id="1_8kd3h"]
+[ext_resource type="Script" uid="uid://c3iylknr2dhfl" path="res://Core/UI/ServerPicker.cs" id="1_64j3b"]
+[ext_resource type="Texture2D" uid="uid://divtivb8oy3nt" path="res://Assets/E621_logo.svg.png" id="2_k4xd6"]
+[ext_resource type="Texture2D" uid="uid://duow50c66sgoo" path="res://Assets/Gelbooru_logo.png" id="3_s6g1f"]
+[ext_resource type="Texture2D" uid="uid://blk7gjbi0fnfe" path="res://Assets/Danbooru_icon.png" id="4_x84ie"]
+
+[node name="ServerPicker" type="OptionButton" unique_id=1931738180]
+offset_right = 192.0
+offset_bottom = 64.0
+tooltip_text = "The current server that the post will be downloaded."
+alignment = 1
+selected = 0
+item_count = 4
+popup/item_0/text = "Rule34"
+popup/item_0/icon = ExtResource("1_8kd3h")
+popup/item_0/id = 0
+popup/item_1/text = "e621"
+popup/item_1/icon = ExtResource("2_k4xd6")
+popup/item_1/id = 3
+popup/item_2/text = "Gelbooru"
+popup/item_2/icon = ExtResource("3_s6g1f")
+popup/item_2/id = 2
+popup/item_3/text = "Danbooru"
+popup/item_3/icon = ExtResource("4_x84ie")
+popup/item_3/id = 3
+script = ExtResource("1_64j3b")

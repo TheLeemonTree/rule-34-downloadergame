@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dadlymf7e0mkl"]
+
+[ext_resource type="PackedScene" uid="uid://m3bhp2yde6j6" path="res://Core/UI/ServerPicker.tscn" id="1_cc7qv"]
+
+[node name="SettingsUI" type="Control" unique_id=1065386241]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ServerPicker" parent="." unique_id=1931738180 instance=ExtResource("1_cc7qv")]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 326.0
+offset_bottom = 192.0
+
+[node name="ServerApi" type="TextEdit" parent="." unique_id=1780361063]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 248.0
+offset_right = 392.0
+offset_bottom = 320.0
+tooltip_text = "The current server api"
+placeholder_text = "API:"
+
+[node name="DownloadPath" type="TextEdit" parent="." unique_id=366086773]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 384.0
+offset_right = 392.0
+offset_bottom = 456.0
+tooltip_text = "The download path, where the images, videos will be stored."
+placeholder_text = "Download path"
+
+[node name="BlackList" type="TextEdit" parent="." unique_id=568185739]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 512.0
+offset_right = 392.0
+offset_bottom = 584.0
+tooltip_text = "The black list, separeted by \" \"(spaces)"
+placeholder_text = "Black list"
+
+[node name="VideoButton" type="CheckButton" parent="." unique_id=2094862751]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 256.0
+offset_right = 696.0
+offset_bottom = 287.0
+tooltip_text = "Ignored videos, such as .mp4 and .gif"
+text = "Ignore videos"
+
+[node name="CheckDuplicates" type="CheckButton" parent="." unique_id=206289821]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 320.0
+offset_right = 696.0
+offset_bottom = 351.0
+tooltip_text = "Checks if the hash of the current downloading image matches any of the already downloaded images on the save path."
+text = "Check duplicates"
+
+[node name="SepareteAritst" type="CheckButton" parent="." unique_id=1985732671]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 415.0
+tooltip_text = "Each new batch download, will search if the current artist is already existed, if not, create a folder and put the downloads in there."
+text = "Separete per artist"
+
+[node name="SepareteSite" type="CheckButton" parent="." unique_id=998988458]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 448.0
+offset_right = 705.0
+offset_bottom = 479.0
+tooltip_text = "Separate each bach, by the website it is current being downloaded."
+text = "Separete per site"
+
+[node name="SaveButton" type="Button" parent="." unique_id=1467428501]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 512.0
+offset_right = 1024.0
+offset_bottom = 575.0
+tooltip_text = "Save your changes."
+text = "Save settings"
